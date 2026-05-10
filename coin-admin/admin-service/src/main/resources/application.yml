@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: admin-service
+  config:
+    import: optional:nacos:admin-service-dev.yml
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        namespace: public
+        group: DEFAULT_GROUP
+      config:
+        file-extension: yml
+        group: DEFAULT_GROUP
+        namespace: public
+  profiles:
+    active: dev

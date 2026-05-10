@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.WebConfigMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.domain.WebConfig">
+            <id property="id" column="id" />
+            <result property="type" column="type" />
+            <result property="name" column="name" />
+            <result property="value" column="value" />
+            <result property="sort" column="sort" />
+            <result property="created" column="created" />
+            <result property="url" column="url" />
+            <result property="status" column="status" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,type,name,value,sort,created,
+        url,status
+    </sql>
+</mapper>

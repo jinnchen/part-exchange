@@ -1,0 +1,42 @@
+server:
+  port: 80
+
+no:
+  require:
+    urls: /admin/login,/admin/register
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.cloud.loadbalancer: DEBUG
+    org.springframework.cloud.nacos: DEBUG
+
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+        namespace: public
+        group: DEFAULT_GROUP
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: test_router
+              uri: http://www.example.com
+              predicates:
+                - Path=/test
+            - id: admin-service_router
+              uri: lb://admin-service
+              predicates:
+                - Path=/admin/**
+              filters:
+                - StripPrefix=1
+# TODO 从nacos读取 sentinel 配置
+    sentinel:
+      transport:
+        dashboard: localhost:8080

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.SysRolePrivilegeMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.domain.SysRolePrivilege">
+            <id property="id" column="id" />
+            <result property="createBy" column="create_by" />
+            <result property="modifyBy" column="modify_by" />
+            <result property="created" column="created" />
+            <result property="lastUpdateTime" column="last_update_time" />
+            <result property="roleId" column="role_id" />
+            <result property="privilegeId" column="privilege_id" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,create_by,modify_by,created,last_update_time,role_id,
+        privilege_id
+    </sql>
+</mapper>

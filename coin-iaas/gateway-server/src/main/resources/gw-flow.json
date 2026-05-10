@@ -1,0 +1,7 @@
+[
+  {
+    "resource": "admin-service_router",
+    "count": 5,
+    "intervalSec": 10
+  }
+]

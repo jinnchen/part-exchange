@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.WorkIssueMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.domain.WorkIssue">
+            <id property="id" column="id" />
+            <result property="createBy" column="create_by" />
+            <result property="modifyBy" column="modify_by" />
+            <result property="created" column="created" />
+            <result property="lastUpdateTime" column="last_update_time" />
+            <result property="userId" column="user_id" />
+            <result property="answerUserId" column="answer_user_id" />
+            <result property="answerName" column="answer_name" />
+            <result property="question" column="question" />
+            <result property="answer" column="answer" />
+            <result property="status" column="status" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,create_by,modify_by,created,last_update_time,user_id,
+        answer_user_id,answer_name,question,answer,status
+    </sql>
+</mapper>

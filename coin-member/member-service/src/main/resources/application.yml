@@ -1,8 +1,8 @@
 spring:
   application:
-    name: admin-service
+    name: member-service
   config:
-    import: optional:nacos:${spring.application.name}-${spring.profiles.active}.yml
+    import: optional:nacos:member-service.yml
   cloud:
     nacos:
       server-addr: localhost:8848
@@ -12,7 +12,7 @@ spring:
         password: nacos
       config:
         file-extension: yml
-        group: DEFAULT_GROUP
+        group: DEFAULT-GROUP
         namespace: public
   profiles:
     active: dev

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="432e3bfe-9bd9-4b5f-a62f-1a144a8abd79" name="更改" comment="" />
+    <list default="true" id="432e3bfe-9bd9-4b5f-a62f-1a144a8abd79" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/coin-member/member-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coin-admin/admin-service/src/main/java/org/example/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/coin-admin/admin-service/src/main/java/org/example/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coin-member/member-service/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/coin-member/member-service/src/main/java/org/example/MemberServiceApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,9 +68,9 @@
     "Spring Boot.GatewayServerApplication.executor": "Run",
     "Spring Boot.Main.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/learn/coin_exchange/coin-member/member-service/src/main/java/org/example",
+    "last_opened_file_path": "D:/learn/part-exchange",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,7 +117,7 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="AdminServiceApplication" value="STOPPED" />
+              <entry key="AdminServiceApplication" value="FAILED" />
               <entry key="AuthorizationApplication" value="STOPPED" />
               <entry key="GatewayServerApplication" value="STOPPED" />
             </map>
@@ -206,8 +210,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AdminServiceApplication" />
-        <item itemvalue="Spring Boot.GatewayServerApplication" />
         <item itemvalue="Spring Boot.AuthorizationApplication" />
+        <item itemvalue="Spring Boot.GatewayServerApplication" />
         <item itemvalue="Spring Boot.CoinCommonApplication" />
         <item itemvalue="应用程序.CoinCommonApplication" />
       </list>
@@ -320,7 +324,7 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/coin-member/member-service/src/main/java/org/example/Main.java</url>
+          <url>file://$PROJECT_DIR$/coin-member/member-service/src/main/java/org/example/MemberServiceApplication.java</url>
           <line>13</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>

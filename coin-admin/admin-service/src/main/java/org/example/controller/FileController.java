@@ -23,10 +23,10 @@ public class FileController {
     @Autowired
     private OSS ossClient;
 
-    @Value("${oss.bucket.name:coin-exchange-imgs}")
+    @Value("${spring.cloud.alicloud.oss.bucket.name:coin-exchange-imgs}")
     private String bucketName;
 
-    @Value("${alicoud.oss.endpoint:oss-cn}")
+    @Value("${spring.cloud.alicloud.oss.endpoint:}")
     private String endpoint;
 
     @Operation(description = "文件上传")
